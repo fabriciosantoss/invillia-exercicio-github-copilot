@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const participantItems = participants
-      .map((participant) => `<li>${participant}</li>`)
-      .join("");
+      .map((participant) => `<span class="participant-badge">${participant}</span>`)
+      .join(" ");
 
     return `
       <p><strong>Participants:</strong></p>
-      <ul class="participants-list">
+      <div class="participants-list">
         ${participantItems}
-      </ul>
+      </div>
     `;
   }
 
